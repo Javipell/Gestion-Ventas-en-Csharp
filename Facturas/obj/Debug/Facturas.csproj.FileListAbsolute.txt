@@ -1,0 +1,16 @@
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.csprojResolveAssemblyReference.cache
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.Acceso.resources
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.ActualizarDatos.resources
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.FormBase.resources
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.Properties.Resources.resources
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.VentanaAdmin.resources
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.VentanaUser.resources
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.csproj.GenerateResource.Cache
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.csproj.CoreCompileInputs.cache
+C:\Users\pepe\source\repos\Facturas\Facturas\bin\Debug\Facturas.exe.config
+C:\Users\pepe\source\repos\Facturas\Facturas\bin\Debug\Facturas.exe
+C:\Users\pepe\source\repos\Facturas\Facturas\bin\Debug\Facturas.pdb
+C:\Users\pepe\source\repos\Facturas\Facturas\bin\Debug\ClassLibrary.dll
+C:\Users\pepe\source\repos\Facturas\Facturas\bin\Debug\ClassLibrary.pdb
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.exe
+C:\Users\pepe\source\repos\Facturas\Facturas\obj\Debug\Facturas.pdb
