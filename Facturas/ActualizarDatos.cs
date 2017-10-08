@@ -18,12 +18,6 @@ namespace Facturas
             InitializeComponent();
         }
 
-        /*
-         * metodo btnGuardaar_Click
-         * Comprueba si es valida la contraseña anterior
-         * comprueba si la contraseña nueva es igual a la verificacion
-         * y actualiza la bases de datos modificadola 
-         */
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (txtAnterior.Text == Acceso.login.Tables[0].Rows[0]["password"].ToString())
@@ -33,14 +27,8 @@ namespace Facturas
                     string id = Acceso.login.Tables[0].Rows[0]["id_usuario"].ToString();
                     string sql = string.Format("UPDATE usuarios SET password='{0}' WHERE Id_usuario='{1}';", txtNueva.Text, id);
                     DataSet datos = Utilidades.Ejecutar(sql);
-                    try
-                    {
-                        string prueba = datos.Tables[0].Rows[0]["Num_usu"].ToString();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Fallo en la modificacion.\nSQL: "+sql+"\n"+ex.Message);
-                    }
+                    MessageBox.Show("La contraseña ha sido cambiada.", "Cambio de Contraseña", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    this.Close();
                 }
                 else
                 {
@@ -51,7 +39,6 @@ namespace Facturas
             {
                 MessageBox.Show("Debe introducir la contraseña anterior.","Contraseña Incorrecta", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
-           
         }
     }
 }

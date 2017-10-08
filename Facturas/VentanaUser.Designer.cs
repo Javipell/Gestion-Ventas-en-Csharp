@@ -51,7 +51,7 @@
             // 
             this.btnCerrarSesion.Location = new System.Drawing.Point(297, 249);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(212, 29);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(212, 37);
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
@@ -60,19 +60,21 @@
             // 
             this.btnCambiarContraseña.Location = new System.Drawing.Point(296, 159);
             this.btnCambiarContraseña.Name = "btnCambiarContraseña";
-            this.btnCambiarContraseña.Size = new System.Drawing.Size(212, 29);
+            this.btnCambiarContraseña.Size = new System.Drawing.Size(212, 37);
             this.btnCambiarContraseña.TabIndex = 4;
             this.btnCambiarContraseña.Text = "Cambiar Contraseña";
             this.btnCambiarContraseña.UseVisualStyleBackColor = true;
+            this.btnCambiarContraseña.Click += new System.EventHandler(this.btnCambiarContraseña_Click);
             // 
             // btnPrincipal
             // 
             this.btnPrincipal.Location = new System.Drawing.Point(296, 70);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(212, 29);
+            this.btnPrincipal.Size = new System.Drawing.Size(212, 37);
             this.btnPrincipal.TabIndex = 3;
             this.btnPrincipal.Text = "Formulario Principal";
             this.btnPrincipal.UseVisualStyleBackColor = true;
+            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
             // 
             // txtCodigo
             // 

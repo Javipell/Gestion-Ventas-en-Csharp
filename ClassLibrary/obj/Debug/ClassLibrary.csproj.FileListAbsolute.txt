@@ -1,6 +1,6 @@
-C:\Users\pepe\source\repos\Facturas\ClassLibrary\bin\Debug\ClassLibrary.dll
-C:\Users\pepe\source\repos\Facturas\ClassLibrary\bin\Debug\ClassLibrary.pdb
-C:\Users\pepe\source\repos\Facturas\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
-C:\Users\pepe\source\repos\Facturas\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
-C:\Users\pepe\source\repos\Facturas\ClassLibrary\obj\Debug\ClassLibrary.dll
-C:\Users\pepe\source\repos\Facturas\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache

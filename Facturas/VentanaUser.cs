@@ -30,5 +30,17 @@ namespace Facturas
             string imagen = Acceso.login.Tables[0].Rows[0]["Foto"].ToString();
             pictureBox1.Image = Image.FromFile(imagen);
         }
+
+        private void btnPrincipal_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal ConP = new ContenedorPrincipal();
+            ConP.ShowDialog();
+        }
+
+        private void btnCambiarContraseña_Click(object sender, EventArgs e)
+        {
+            ActualizarDatos frmActualizar = new ActualizarDatos();
+            frmActualizar.Show();
+        }
     }
 }

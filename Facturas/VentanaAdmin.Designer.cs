@@ -100,7 +100,7 @@
             // 
             this.btnPrincipal.Location = new System.Drawing.Point(295, 74);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(212, 29);
+            this.btnPrincipal.Size = new System.Drawing.Size(212, 37);
             this.btnPrincipal.TabIndex = 3;
             this.btnPrincipal.Text = "Formulario Principal";
             this.btnPrincipal.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@
             // 
             this.btnAdminUser.Location = new System.Drawing.Point(295, 139);
             this.btnAdminUser.Name = "btnAdminUser";
-            this.btnAdminUser.Size = new System.Drawing.Size(212, 29);
+            this.btnAdminUser.Size = new System.Drawing.Size(212, 37);
             this.btnAdminUser.TabIndex = 4;
             this.btnAdminUser.Text = "AdministrarUsuarios";
             this.btnAdminUser.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             // 
             this.btnCambiarContraseña.Location = new System.Drawing.Point(295, 200);
             this.btnCambiarContraseña.Name = "btnCambiarContraseña";
-            this.btnCambiarContraseña.Size = new System.Drawing.Size(212, 29);
+            this.btnCambiarContraseña.Size = new System.Drawing.Size(212, 37);
             this.btnCambiarContraseña.TabIndex = 5;
             this.btnCambiarContraseña.Text = "Cambiar Contraseña";
             this.btnCambiarContraseña.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             // 
             this.btnCerrarSesion.Location = new System.Drawing.Point(295, 265);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(212, 29);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(212, 37);
             this.btnCerrarSesion.TabIndex = 6;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;

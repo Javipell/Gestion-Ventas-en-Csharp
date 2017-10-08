@@ -98,11 +98,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(82, 9);
+            this.label4.Location = new System.Drawing.Point(140, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(266, 24);
+            this.label4.Size = new System.Drawing.Size(164, 24);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Ventana de Acceso al Sistema";
+            this.label4.Text = "Acceso al Sistema";
             // 
             // Acceso
             // 

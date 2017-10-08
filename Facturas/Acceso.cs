@@ -50,7 +50,7 @@ namespace Facturas
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Datos incorrectos.\nSQL: "+sql+"\n"+ex.Message);
+                    MessageBox.Show("Datos incorrectos!!.\nSQL: "+sql+"\n"+ex.Message);
                 }
             }
         }

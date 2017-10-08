@@ -19,7 +19,8 @@ namespace Facturas
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ContenedorPrincipal ConP = new ContenedorPrincipal();
+            ConP.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
