@@ -38,3 +38,7 @@ C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\Facturas\bin\Debug\Fact
 C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\Facturas\bin\Debug\Facturas.pdb
 C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\Facturas\bin\Debug\ClassLibrary.dll
 C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\Facturas\bin\Debug\ClassLibrary.pdb
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\Facturas\obj\Debug\Facturas.Consultas.resources
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\Facturas\obj\Debug\Facturas.ConsultarCliente.resources
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\Facturas\obj\Debug\Facturas.ConsultaProductos.resources
+C:\Users\pepe\Documents\CSHARP\28_sabado_071017\Facturas\Facturas\obj\Debug\Facturas.Facturacion.resources

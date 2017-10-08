@@ -118,5 +118,26 @@ namespace Facturas
             ManPro.MdiParent = this;
             ManPro.Show();
         }
+
+        private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente frmCli = new ConsultarCliente();
+            frmCli.MdiParent = this;
+            frmCli.Show();
+        }
+
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaProductos frmPro = new ConsultaProductos();
+            frmPro.MdiParent = this;
+            frmPro.Show();
+        }
+
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion frmFacturacion = new Facturacion();
+            frmFacturacion.MdiParent = this;
+            frmFacturacion.Show();
+        }
     }
 }
