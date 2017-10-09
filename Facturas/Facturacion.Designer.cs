@@ -29,17 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnColocar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtAtiende = new ClassLibrary.ErrorTxtBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtCodigo = new ClassLibrary.ErrorTxtBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,30 +45,37 @@
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFacturar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.cmbNomCliente = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(587, 343);
+            this.btnSalir.Size = new System.Drawing.Size(94, 31);
             // 
             // btnColocar
             // 
             this.btnColocar.Location = new System.Drawing.Point(587, 128);
             this.btnColocar.Margin = new System.Windows.Forms.Padding(2);
             this.btnColocar.Name = "btnColocar";
-            this.btnColocar.Size = new System.Drawing.Size(83, 31);
+            this.btnColocar.Size = new System.Drawing.Size(94, 31);
             this.btnColocar.TabIndex = 5;
-            this.btnColocar.Text = "Colocar";
+            this.btnColocar.Text = "Añadir";
             this.btnColocar.UseVisualStyleBackColor = true;
             this.btnColocar.Click += new System.EventHandler(this.btnColocar_Click);
             // 
@@ -109,61 +110,19 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCodigo,
             this.colDescripcion,
-            this.colCantidad,
             this.colPrecio,
+            this.colCantidad,
             this.colImporte});
             this.dataGridView1.Location = new System.Drawing.Point(10, 162);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(561, 174);
             this.dataGridView1.TabIndex = 8;
-            // 
-            // colCodigo
-            // 
-            this.colCodigo.HeaderText = "Código";
-            this.colCodigo.Name = "colCodigo";
-            this.colCodigo.ReadOnly = true;
-            this.colCodigo.Width = 75;
-            // 
-            // colDescripcion
-            // 
-            this.colDescripcion.HeaderText = "Descripción";
-            this.colDescripcion.Name = "colDescripcion";
-            this.colDescripcion.ReadOnly = true;
-            this.colDescripcion.Width = 200;
-            // 
-            // colCantidad
-            // 
-            this.colCantidad.HeaderText = "Cantidad";
-            this.colCantidad.Name = "colCantidad";
-            this.colCantidad.ReadOnly = true;
-            // 
-            // colPrecio
-            // 
-            this.colPrecio.HeaderText = "Precio";
-            this.colPrecio.Name = "colPrecio";
-            this.colPrecio.ReadOnly = true;
-            // 
-            // colImporte
-            // 
-            this.colImporte.HeaderText = "Importe";
-            this.colImporte.Name = "colImporte";
-            this.colImporte.ReadOnly = true;
-            this.colImporte.Width = 110;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(478, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 76);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // txtCodigo
             // 
@@ -212,7 +171,7 @@
             this.txtDescripcion.Location = new System.Drawing.Point(74, 132);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(261, 26);
+            this.txtDescripcion.Size = new System.Drawing.Size(203, 26);
             this.txtDescripcion.SoloNumeros = false;
             this.txtDescripcion.TabIndex = 15;
             this.txtDescripcion.Validar = true;
@@ -220,10 +179,10 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(342, 132);
+            this.txtPrecio.Location = new System.Drawing.Point(373, 132);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(76, 26);
+            this.txtPrecio.Size = new System.Drawing.Size(103, 26);
             this.txtPrecio.SoloNumeros = false;
             this.txtPrecio.TabIndex = 16;
             this.txtPrecio.Validar = true;
@@ -231,10 +190,10 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(422, 132);
+            this.txtCantidad.Location = new System.Drawing.Point(281, 132);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(71, 26);
+            this.txtCantidad.Size = new System.Drawing.Size(88, 26);
             this.txtCantidad.SoloNumeros = false;
             this.txtCantidad.TabIndex = 17;
             this.txtCantidad.Validar = true;
@@ -245,7 +204,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(587, 164);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(83, 31);
+            this.btnEliminar.Size = new System.Drawing.Size(94, 31);
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -256,7 +215,7 @@
             this.btnClientes.Location = new System.Drawing.Point(587, 199);
             this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(83, 31);
+            this.btnClientes.Size = new System.Drawing.Size(94, 31);
             this.btnClientes.TabIndex = 19;
             this.btnClientes.Text = "Cllientes";
             this.btnClientes.UseVisualStyleBackColor = true;
@@ -267,7 +226,7 @@
             this.btnProductos.Location = new System.Drawing.Point(587, 235);
             this.btnProductos.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(83, 31);
+            this.btnProductos.Size = new System.Drawing.Size(94, 31);
             this.btnProductos.TabIndex = 20;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
@@ -278,21 +237,22 @@
             this.btnNuevo.Location = new System.Drawing.Point(587, 271);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(83, 31);
+            this.btnNuevo.Size = new System.Drawing.Size(94, 31);
             this.btnNuevo.TabIndex = 21;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Text = "Limpiar";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // button1
+            // btnFacturar
             // 
-            this.button1.Location = new System.Drawing.Point(587, 307);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 31);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Colocar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnFacturar.Location = new System.Drawing.Point(587, 307);
+            this.btnFacturar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFacturar.Name = "btnFacturar";
+            this.btnFacturar.Size = new System.Drawing.Size(94, 31);
+            this.btnFacturar.TabIndex = 22;
+            this.btnFacturar.Text = "Facturar";
+            this.btnFacturar.UseVisualStyleBackColor = true;
+            this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click);
             // 
             // label4
             // 
@@ -320,9 +280,9 @@
             this.lblTotal.Location = new System.Drawing.Point(510, 350);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(44, 20);
+            this.lblTotal.Size = new System.Drawing.Size(31, 20);
             this.lblTotal.TabIndex = 25;
-            this.lblTotal.Text = "Total";
+            this.lblTotal.Text = "0,0";
             // 
             // btnBuscar
             // 
@@ -348,6 +308,50 @@
             this.cmbNomCliente.Size = new System.Drawing.Size(118, 28);
             this.cmbNomCliente.TabIndex = 27;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Facturas.Properties.Resources.tienda;
+            this.pictureBox1.Location = new System.Drawing.Point(413, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(267, 107);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // colCodigo
+            // 
+            this.colCodigo.HeaderText = "Código";
+            this.colCodigo.Name = "colCodigo";
+            this.colCodigo.ReadOnly = true;
+            this.colCodigo.Width = 75;
+            // 
+            // colDescripcion
+            // 
+            this.colDescripcion.HeaderText = "Descripción";
+            this.colDescripcion.Name = "colDescripcion";
+            this.colDescripcion.ReadOnly = true;
+            this.colDescripcion.Width = 200;
+            // 
+            // colPrecio
+            // 
+            this.colPrecio.HeaderText = "Precio";
+            this.colPrecio.Name = "colPrecio";
+            this.colPrecio.ReadOnly = true;
+            // 
+            // colCantidad
+            // 
+            this.colCantidad.HeaderText = "Cantidad";
+            this.colCantidad.Name = "colCantidad";
+            this.colCantidad.ReadOnly = true;
+            // 
+            // colImporte
+            // 
+            this.colImporte.HeaderText = "Importe";
+            this.colImporte.Name = "colImporte";
+            this.colImporte.ReadOnly = true;
+            this.colImporte.Width = 110;
+            // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -358,7 +362,7 @@
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFacturar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.btnClientes);
@@ -396,15 +400,15 @@
             this.Controls.SetChildIndex(this.btnClientes, 0);
             this.Controls.SetChildIndex(this.btnProductos, 0);
             this.Controls.SetChildIndex(this.btnNuevo, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btnFacturar, 0);
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.lblTotal, 0);
             this.Controls.SetChildIndex(this.btnBuscar, 0);
             this.Controls.SetChildIndex(this.cmbNomCliente, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,7 +432,7 @@
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFacturar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblTotal;
@@ -437,8 +441,8 @@
         private System.Windows.Forms.ComboBox cmbNomCliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDescripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrecio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colImporte;
     }
 }

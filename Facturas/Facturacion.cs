@@ -246,7 +246,7 @@ namespace Facturas
             Nuevo();
         }
 
-        public void Nuevo()
+        public override void Nuevo()
         {
             txtCodigo.Text = "";
             cmbNomCliente.Items.Clear();
@@ -260,6 +260,53 @@ namespace Facturas
             dataGridView1.Rows.Clear();
             total = 0;
             txtCodigo.Focus();
+        }
+
+        private void btnFacturar_Click(object sender, EventArgs e)
+        {
+            if (contador_filas > 0)
+            {
+                DataSet dataSet;
+                string sql = "" ;
+
+                try
+                {
+                    // ejecuta el procedimiento almacenado de actualizar factura
+                    sql = "EXEC ActualizaFacturas " + txtCodigo.Text.Trim();
+                    dataSet = Utilidades.Ejecutar(sql);
+                    // guarda el numero de factura traido por la consulta
+                    string numeroFactura = dataSet.Tables[0].Rows[0]["NumeroFactura"].ToString().Trim();
+                    // recorre cada una de las filas del dataGridView1
+                    foreach (DataGridViewRow fila in dataGridView1.Rows)
+                    {
+                        /*
+                         * Orden de las columnas del dataGridView1
+                         * 0 codigo producto, 1 descripcion, 2 precio, 3 cantidad, 4 importe
+                         */
+                        sql = string.Format( "EXEC ActualizaDetalles '{0}','{1}','{2}','{3}'", 
+                                numeroFactura, 
+                                fila.Cells[0].Value.ToString(), // codigo producto
+                                fila.Cells[2].Value.ToString(), // precio
+                                fila.Cells[3].Value.ToString()  // camtidad 
+                                );
+                        dataSet = Utilidades.Ejecutar(sql);
+                    }
+                    // ejecuta el procedimiento Datos factura, donde guarda el numero, fecha, cliente
+                    sql = "EXEC DatosFactura " + numeroFactura;
+                    dataSet = Utilidades.Ejecutar(sql);
+                    /*
+                     * VENTANA REPORTE
+                     */
+                    Reportes reportes = new Reportes();
+                    reportes.reportViewer1.LocalReport.DataSources[0].Value = dataSet.Tables[0];
+                    reportes.ShowDialog();
+                    Nuevo();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al facturar. \nSql: "+sql+"\n"+ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
